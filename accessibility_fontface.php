@@ -24,8 +24,6 @@
 
 namespace local_accessibility\widgets;
 
-defined('MOODLE_INTERNAL') or die();
-
 /**
  * Font face accessibility widget definition
  */
@@ -35,9 +33,6 @@ class fontface extends widgetbase {
     }
 
     public function init() {
-        /**
-         * @var \moodle_page $PAGE
-         */
         global $PAGE;
 
         $userconfig = $this->getuserconfig();
@@ -45,14 +40,13 @@ class fontface extends widgetbase {
             $this->addbodyclass('accessibility-fontface-' . $userconfig);
         }
 
+        /** @var \moodle_page $PAGE */
         $PAGE->requires->js_call_amd('accessibility_fontface/script', 'init');
     }
 
     public function getcontent() {
-        /**
-         * @var \core_renderer $OUTPUT
-         */
         global $OUTPUT;
+        /** @var \core_renderer $OUTPUT */ $OUTPUT;
         return $OUTPUT->render_from_template('accessibility_fontface/default', []);
     }
 }
