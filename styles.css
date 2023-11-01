@@ -24,14 +24,17 @@ along with Moodle.  If not, see <https://www.gnu.org/licenses/>. */
     src: url(/local/accessibility/widgets/fontface/assets/opendyslexic.otf) format('opentype');
 }
 
-body.accessibility-fontface-serif, body.accessibility-fontface-serif *:not(i) {
+body.accessibility-fontface-serif,
+body.accessibility-fontface-serif *:not(i) {
     font-family: none !important;
 }
 
-body.accessibility-fontface-sansserif, body.accessibility-fontface-sansserif *:not(i) {
+body.accessibility-fontface-sansserif,
+body.accessibility-fontface-sansserif *:not(i) {
     font-family: sans-serif !important;
 }
 
-body.accessibility-fontface-dyslexic, body.accessibility-fontface-dyslexic *:not(i) {
+body.accessibility-fontface-dyslexic,
+body.accessibility-fontface-dyslexic *:not(i) {
     font-family: opendyslexic !important;
 }

@@ -28,10 +28,18 @@ namespace local_accessibility\widgets;
  * Font face accessibility widget definition
  */
 class fontface extends widgetbase {
+    /**
+     * Constructor
+     */
     public function __construct() {
         parent::__construct(get_string('pluginname', 'accessibility_fontface'), 'fontface');
     }
 
+    /**
+     * Initialisation
+     *
+     * @return void
+     */
     public function init() {
         global $PAGE;
 
@@ -44,6 +52,11 @@ class fontface extends widgetbase {
         $PAGE->requires->js_call_amd('accessibility_fontface/script', 'init');
     }
 
+    /**
+     * Get widget content
+     *
+     * @return void
+     */
     public function getcontent() {
         global $OUTPUT;
         /** @var \core_renderer $OUTPUT */ $OUTPUT;
