@@ -26,15 +26,15 @@ along with Moodle.  If not, see <https://www.gnu.org/licenses/>. */
 
 body.accessibility-fontface-serif,
 body.accessibility-fontface-serif *:not(i) {
-    font-family: none !important;
+    font-family: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
 body.accessibility-fontface-sansserif,
 body.accessibility-fontface-sansserif *:not(i) {
-    font-family: sans-serif !important;
+    font-family: sans-serif !important; /* stylelint-disable-line declaration-no-important */
 }
 
 body.accessibility-fontface-dyslexic,
 body.accessibility-fontface-dyslexic *:not(i) {
-    font-family: opendyslexic !important;
+    font-family: opendyslexic !important; /* stylelint-disable-line declaration-no-important */
 }
