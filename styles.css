@@ -21,7 +21,7 @@ along with Moodle.  If not, see <https://www.gnu.org/licenses/>. */
  */
 @font-face {
     font-family: opendyslexic;
-    src: url(/local/accessibility/widgets/fontface/assets/opendyslexic.otf) format('opentype');
+    src: url(../../../../local/accessibility/widgets/fontface/assets/opendyslexic.otf) format('opentype');
 }
 
 body.accessibility-fontface-serif,
