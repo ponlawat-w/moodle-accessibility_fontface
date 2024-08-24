@@ -22,7 +22,9 @@
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace local_accessibility\widgets;
+namespace accessibility_fontface;
+
+use local_accessibility\widgets\widgetbase;
 
 /**
  * Font face accessibility widget definition
@@ -45,7 +47,8 @@ class fontface extends widgetbase {
 
         $userconfig = $this->getuserconfig();
         if ($userconfig) {
-            $this->addbodyclass('accessibility-fontface-' . $userconfig);
+            $fontface = clean_param($userconfig, PARAM_ALPHANUM);
+            $this->addbodyclass('accessibility-fontface-' . $fontface);
         }
 
         /** @var \moodle_page $PAGE */
