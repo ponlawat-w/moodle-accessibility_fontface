@@ -15,20 +15,14 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Plugin version and other meta-data are defined here.
+ * Language strings
  *
  * @package     accessibility_fontface
  * @copyright   2023 Ponlawat Weerapanpisit <ponlawat_w@outlook.co.th>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
-$plugin->component = 'accessibility_fontface';
-$plugin->release = '2.0.1';
-$plugin->version = 2025012900;
-$plugin->requires = 2022041900;
-$plugin->maturity = MATURITY_STABLE;
-$plugin->dependencies = [
-    'local_accessibility' => 2024082401,
-];
+$string['dyslexic'] = 'ディスレクシア';
+$string['pluginname'] = 'フォント';
+$string['sansserif'] = 'サンセリフ';
+$string['serif'] = 'セリフ';
